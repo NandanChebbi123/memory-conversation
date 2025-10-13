@@ -1,0 +1,7 @@
+streamlit==1.39.0
+openai==1.51.0
+pandas
+faiss-cpu
+networkx
+matplotlib
+python-dotenv

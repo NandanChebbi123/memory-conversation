@@ -3,12 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 print("OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
-os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
-os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+
 
 from openai import OpenAI
 
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 import sys, os
 import streamlit as st

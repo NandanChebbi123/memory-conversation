@@ -15,3 +15,17 @@ wheels/
 .env
 .env
 .env.example
+
+# Uploads, processed data, and logs
+uploads/
+processed/
+logs/
+
+# FAISS / vector DB
+faiss_default/
+
+# Temporary files
+temp_memory_kg.html
+.~lock.*  # LibreOffice lock files
+*.pyc
+__pycache__/

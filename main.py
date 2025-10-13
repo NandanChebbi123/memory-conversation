@@ -5,6 +5,10 @@ load_dotenv()
 print("OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
 
 
+for var in ["HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy"]:
+    if var in os.environ:
+        del os.environ[var]
+
 from openai import OpenAI
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))

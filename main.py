@@ -1,3 +1,15 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+print("OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
+os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
+os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+
+from openai import OpenAI
+
+client = OpenAI()
+
 import sys, os
 import streamlit as st
 import networkx as nx
@@ -8,8 +20,6 @@ from pkg.memory_kg import MemoryKG, LocalFileAdapter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 from pkg.logger import get_logger
-
-load_dotenv()
 
 @st.cache_resource(show_spinner=False)
 def get_memory(profile_name: str):

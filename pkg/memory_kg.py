@@ -6,7 +6,6 @@ from langchain.vectorstores import FAISS
 import pyarrow as pa
 import pyarrow.ipc as ipc
 
-client = OpenAI()
 SHORT_TERM_WINDOW = 15
 
 class MemoryAdapterBase:

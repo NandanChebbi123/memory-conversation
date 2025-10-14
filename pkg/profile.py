@@ -3,7 +3,7 @@ import os
 import json
 import shutil
 from pkg.memory_kg import MemoryKG, LocalFileAdapter
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings
 
 PROFILES_FILE = "profiles.json"
 

@@ -2,7 +2,7 @@ import os, re, ast, threading, json
 import networkx as nx
 from openai import OpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 import pyarrow as pa
 import pyarrow.ipc as ipc
 

@@ -5,7 +5,6 @@ description = "Streamlit memory conversation app"
 authors = ["Nandan Chebbi <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = []
 
 [tool.poetry.dependencies]
 python = ">=3.13,<4.0"

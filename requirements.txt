@@ -88,7 +88,7 @@ nvidia-nvjitlink-cu12==12.6.85 ; python_version >= "3.13" and python_version < "
 nvidia-nvtx-cu12==12.6.77 ; python_version >= "3.13" and python_version < "4.0" and platform_system == "Linux" and platform_machine == "x86_64"
 oauthlib==3.3.1 ; python_version >= "3.13" and python_version < "4.0"
 onnxruntime==1.23.1 ; python_version >= "3.13" and python_version < "4.0"
-openai==2.3.0 ; python_version >= "3.13" and python_version < "4.0"
+openai==2.3.0 ; python_version >= "3.13" and python_version < "4.0" #force rebuild
 opentelemetry-api==1.37.0 ; python_version >= "3.13" and python_version < "4.0"
 opentelemetry-exporter-otlp-proto-common==1.37.0 ; python_version >= "3.13" and python_version < "4.0"
 opentelemetry-exporter-otlp-proto-grpc==1.37.0 ; python_version >= "3.13" and python_version < "4.0"

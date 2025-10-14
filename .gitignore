@@ -29,3 +29,4 @@ temp_memory_kg.html
 .~lock.*  # LibreOffice lock files
 *.pyc
 __pycache__/
+.env

@@ -32,4 +32,5 @@ temp_memory_kg.html
 
 # OS files
 .DS_Store
-Thumbs.db
+Thumbs.db.env
+.env.example

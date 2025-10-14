@@ -1,20 +1,18 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]       # Includes .pyo and .pyd
+*.egg-info
 build/
 dist/
 wheels/
-*.egg-info
 
 # Virtual environments
-.venv
-# Ignore environment files
-.env
-.env
-.env
-.env
-.env
-.env.example
+.venv/
+testenv/        # If you sometimes create other venvs
+
+# Environment files
+.env            # Your secret keys, never upload
+.env.example    # Template for sharing with collaborators
 
 # Uploads, processed data, and logs
 uploads/
@@ -24,9 +22,14 @@ logs/
 # FAISS / vector DB
 faiss_default/
 
-# Temporary files
+# Temporary / cache files
 temp_memory_kg.html
-.~lock.*  # LibreOffice lock files
-*.pyc
-__pycache__/
-.env
+.~lock.*        # LibreOffice lock files
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# OS files
+.DS_Store
+Thumbs.db

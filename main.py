@@ -1,8 +1,17 @@
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 print("OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
+
+import importlib.util
+
+if importlib.util.find_spec("dotenv") is None:
+    print("python-dotenv not found!")
+else:
+    print("python-dotenv is installed!")
+
+    from dotenv import load_dotenv
+    load_dotenv()
+    print(".env file loaded (if it exists).")
+
 
 for var in ["HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy"]:
     if var in os.environ:

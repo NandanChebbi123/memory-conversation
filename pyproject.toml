@@ -17,6 +17,8 @@ langchain = "^0.3.27"
 networkx = "^3.5"
 langchain-community = "0.3.30"
 pyarrow = "^21.0.0"
+facenet-pytorch = "2.5.3"
+pyvis = "^0.3.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.4.0"

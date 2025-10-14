@@ -34,3 +34,4 @@ temp_memory_kg.html
 .DS_Store
 Thumbs.db.env
 .env.example
+.env

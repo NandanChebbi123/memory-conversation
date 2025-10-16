@@ -19,9 +19,14 @@ for var in ["HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy"]:
 
 from openai import OpenAI
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+import os
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("OPENAI_API_KEY is not set!")
 
-import sys, os
+client = OpenAI(api_key=api_key)
+
+import sys
 import streamlit as st
 import networkx as nx
 
